@@ -1,14 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
-    height: 75px;
-    background-color: #1fa4bc;
+    height: 4rem;
 }
 
 .redes {
-    margin-top: 75px;
+    padding: 1rem;
+    height: auto;
 }
 
+.card-text {
+    text-align: center;
+}
+
+.cardContainer {
+    overflow-x: auto !important;
+    white-space: nowrap;
+}
+
+.card {
+    margin: 1rem;
+    white-space:normal;
+}
+
+.card:hover {
+    scale: 1.01;
+    box-shadow: 0 0 0.3rem 0.1px rgba(100, 100, 100, 0.5);
+}
 .navbar-brand {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
 }
 
 .navbar * {
@@ -17,49 +39,50 @@
     color: white !important;
 }
 
-.redes {
-    padding: 1rem;
-}
-
 .redes-img {
     margin: 0 2rem;
-    width: 45px;
+    width: 2.5rem;
     filter: invert(50%) sepia(100%);
 }
 
-.carousel-item img {
-    filter: contrast(65%) saturate(110%);
+.carousel-item {
+    height: 95vh;
+    filter: contrast(50%);
 }
 
 #logo {
-    padding: 0.5rem;
-    height: 75px;
-    width: 75px;
-    filter: invert(1);
+    width: 3rem;
     margin-right: 1rem;
+    filter: invert(1);
 }
 
-footer {
-    height: 50px;
+#headerSticky {
+    z-index: 4;
+    height: 4rem;
     width: 100vw;
     background-color: #1fa4bc;
 }
 
 #sorrirTexto {
-    font-size: 3rem;
+    font-size: 4rem;
     position: absolute;
     z-index: 1;
     color: white;
-    top: 45%;
-    right: 10%;
+    top: 35%;
+    right: 5%;
 }
 
 #chat {
+    z-index: 2;
     position: fixed;
     top: 50%;
     right: 2%;
     height: 50px;
     width: 50px;
+}
+
+#chat:hover {
+    filter: contrast(120%);
 }
 
 #img-chat {
@@ -72,4 +95,155 @@ footer {
 .redes a:hover {
     filter: contrast(200%);
     scale: 1.1;
+}
+
+.navbar-toggler {
+    border: none !important;
+    filter: invert(1);
+    margin-bottom: 0.5rem;
+}
+
+.cardContainer a {
+    height: 0;
+    display: inline-block;
+    color: white;
+    margin: 14px;
+    text-decoration: none;
+}
+
+.card img {
+    width: 300px;
+    padding: 35% 25% 10% 25% ;
+}
+
+
+
+.navbar-collapse {
+    transition: none !important;
+}
+
+.navbar-collapse.show {
+    justify-content: center !important;
+    transition: 1.5s cubic-bezier(0.58, 0.3, 0.005, 1) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    background: rgba(31, 164, 188, 0.9);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#navbarNavDropdown {
+    > li {
+        opacity: 0;
+    }
+}
+
+.navbar-collapse.show li {
+    transition: 0.8s cubic-bezier(0.58, 0.3, 0.005, 1);
+    opacity: 1;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.show ul li {
+    font-size: 2rem;
+    padding: 0;
+    &:nth-child(1) {
+        transition-delay: 0.75s;
+    }
+    &:nth-child(2) {
+        transition-delay: 0.6s;
+    }
+    &:nth-child(3) {
+        transition-delay: 0.5s;
+    }
+    &:nth-child(4) {
+        transition-delay: 0.25s;
+    }
+}
+
+.nav-link.dropdown-toggle::after {
+    transition: 0.2s;
+}
+.nav-link.dropdown-toggle.show::after {
+    transition: 0.2s;
+    transform: rotate(-180deg);
+}
+
+.card:active {
+    border: solid 3px rgba(31, 164, 188, 0.9);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.required::after {
+    margin-left: 0.2rem;
+    color: red;
+    content: '*';
+}
+
+.img-footer {
+    filter: none;
+}
+
+footer {
+    padding: 3rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.card img {
+    filter: contrast(50%);
+}
+
+footer a:hover {
+    filter: contrast(25%)
+}
+
+#toTop {
+    transition: 0.4s;
+    filter: opacity(0.75);
+    z-index: 99;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 45px;
+    width: 45px;
+    padding: 7px 0 0 0;
+}
+
+#toTop:hover::after {
+    color: black;
+    line-height: 200%;
+    content: 'Início';
+}
+
+
+#img1 {
+    filter: invert(1);
+    height: 30px;
+    width: 30px;
+    padding: 0;
+}
+
+.card-title {
+    scale: 1.2;
+    color: #1fa4bc !important;
+    margin-bottom: 1rem !important;
+}
+
+strong {
+    color: #4fcee5;
 }

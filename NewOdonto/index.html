@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Link CSS -->
         <link rel="stylesheet" href="style.css" />
-
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
         <!-- Link Bootstrap 5 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
 
         <title>NewOdonto</title>
     </head>
-    <body>
+    <body id="inicio">
         <header>
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
@@ -25,6 +25,7 @@
                         ><img
                             src="./img/newOdonto.png"
                             id="logo"
+                            width="75"
                             class=""
                         />NEWODONTO</a
                     >
@@ -46,35 +47,25 @@
                         <ul class="navbar-nav">
                             <li class="nav-item"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#Tratamentos">Tratamentos</a>
+                                <a class="nav-link" href="#Tratamentos"
+                                    >Tratamentos</a
+                                >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#Unidades">Unidades</a>
+                                <a class="nav-link" href="#OndeEstamos"
+                                    >Onde estamos</a
+                                >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#faleConosco">Fale Conosco</a>
+                                <a class="nav-link" href="#FaleConosco"
+                                    >Fale Conosco</a
+                                >
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-
-        <article class="redes d-flex justify-content-center">
-
-            <a href="">
-                <img class="redes-img" src="./img/redes/insta.png" alt="instagram" />
-            </a>
-            <a href="">
-                <img class="redes-img" src="./img/redes/whatsapp.png" alt="whatsapp" />
-            </a>
-            <a href="">
-                <img class="redes-img" src="./img/redes/telefone.png" alt="telefone" />
-            </a>
-            <a href="">
-                <img class="redes-img" src="./img/redes/facebook.png" alt="facebook" />
-            </a>
-        </article>
 
         <div class="img-principal">
             <div class="texto-carrossel">
@@ -83,10 +74,10 @@
                     class="carousel slide"
                     data-bs-ride="carousel"
                 >
-                    <div class="texto-carrossel">
+                    <div class="texto-carrossel d-none d-lg-block">
                         <h2 id="sorrirTexto">
                             Porque sorrir <br />
-                            faz bem
+                            <strong>faz bem</strong>
                         </h2>
                     </div>
                     <div class="carousel-inner">
@@ -115,15 +106,354 @@
                 </div>
             </div>
         </div>
+        <div id="headerSticky" class="sticky-top"></div>
+        <article
+            class="bg-body-tertiary redes d-none d-lg-flex justify-content-center"
+        >
+            <a href="https://instagram.com/mdteixeira" target="_blank">
+                <img
+                    class="redes-img"
+                    src="./img/redes/insta.png"
+                    alt="instagram"
+                />
+            </a>
+            <a
+                href="https://api.whatsapp.com/send/?phone=5511993602212"
+                target="_blank"
+            >
+                <img
+                    class="redes-img"
+                    src="./img/redes/whatsapp.png"
+                    alt="whatsapp"
+                />
+            </a>
+            <a href="tel:993602212">
+                <img
+                    class="redes-img"
+                    src="./img/redes/telefone.png"
+                    alt="telefone"
+                />
+            </a>
+            <a href="">
+                <img
+                    class="redes-img"
+                    src="./img/redes/facebook.png"
+                    alt="facebook"
+                />
+            </a>
+        </article>
+
+        <main>
+            <article class="bg-body-secondary p-lg-4 py-5" id="Tratamentos">
+                <h2 class="fw-bold fs-1 mx-4 pt-3">Nossos tratamentos</h2>
+                <div class="cardContainer py-3">
+                    <a href="#">
+                        <section id="card1">
+                            <div class="card rounded rounded-5 text-bg-dark">
+                                <img
+                                    src="./img/newOdonto.png"
+                                    class="card-img rounded rounded-5"
+                                    alt="..."
+                                />
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-center">Estética</h5>
+                                    <p class="card-text">
+                                        Seu sorriso, mais bonito que nunca!
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section id="card2">
+                            <div class="card rounded rounded-5 text-bg-dark">
+                                <img
+                                    src="./img/newOdonto.png"
+                                    class="card-img rounded rounded-5"
+                                    alt="..."
+                                />
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-center">Clínico</h5>
+                                    <p class="card-text">
+                                        Limpezas e restaurações para cuidar bem
+                                        dos dentes
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section id="card3">
+                            <div class="card rounded rounded-5 text-bg-dark">
+                                <img
+                                    src="./img/newOdonto.png"
+                                    class="card-img rounded rounded-5"
+                                    alt="..."
+                                />
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-center">Odontopediatria</h5>
+                                    <p class="card-text">
+                                        Os dentes de sua criança bem cuidados
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section id="card4">
+                            <div class="card rounded rounded-5 text-bg-dark">
+                                <img
+                                    src="./img/newOdonto.png"
+                                    class="card-img rounded rounded-5"
+                                    alt="..."
+                                />
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-center">Endodontia</h5>
+                                    <p class="card-text">
+                                        Você sem dores nos dentes
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section id="card5">
+                            <div class="card rounded rounded-5 text-bg-dark">
+                                <img
+                                    src="./img/newOdonto.png"
+                                    class="card-img rounded rounded-5"
+                                    alt="..."
+                                />
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-center">Periodontia</h5>
+                                    <p class="card-text">
+                                        Cuide da saúde de toda sua boca
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+                </div>
+            </article>
+
+            <article class="my-5 p-4" id="OndeEstamos">
+                <h2 class="fw-bold fs-1">Onde Estamos</h2>
+                <p class="mt-3 fs-4">
+                    Estamos localizados em Santana,
+                    <strong>à 5 minutos andando da estação de metrô</strong>
+                </p>
+                <div class="gmap_canvas">
+                    <iframe
+                        width="100%"
+                        height="300"
+                        id="gmap_canvas"
+                        src="https://maps.google.com/maps?q= Av. Gen. Ataliba Leonel, 245&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                    ></iframe
+                    ><style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 100%;
+                            width: 100%;
+                        }</style
+                    ><style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    </style>
+                </div>
+            </article>
+
+            <article class="mt-5 p-4 bg-body-secondary" id="FaleConosco">
+                <h2 class="fw-bold fs-1 mb-5">Entre em contato com a gente!</h2>
+                <form class="px-lg-5 needs-validation">
+                    <div class="d-lg-flex gap-lg-3">
+                        <div class="form-floating mb-3 col">
+                            <input
+                                type="text"
+                                class="form-control col"
+                                id="nome"
+                                placeholder="Password"
+                                required
+                            />
+                            <label class="required" for="nome">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3 col">
+                            <input
+                                type="text"
+                                class="form-control col"
+                                id="sobrenome"
+                                placeholder="Sobrenome"
+                                required
+                            />
+                            <label class="required" for="sobrenome"
+                                >Sobrenome</label
+                            >
+                        </div>
+                    </div>
+                    <div class="d-lg-flex gap-lg-3">
+                        <div class="form-floating mb-3 col-lg-8">
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="nome@exemplo.com.br"
+                                required
+                            />
+                            <label class="required" for="email">Email</label>
+                        </div>
+                        <div class="form-floating mb-3 col">
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="celular"
+                                placeholder="(xx)xxxxx-xxxx"
+                                required
+                            />
+                            <label class="required" for="celular"
+                                >Celular</label
+                            >
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select
+                            class="form-select"
+                            id="tratamentos"
+                            aria-label="Selecionar tratamento"
+                            required
+                        >
+                            <option selected disabled hidden>
+                                Selecione uma opção
+                            </option>
+                            <option value="Estética">Estética</option>
+                            <option value="Odontopediatria">Odontopediatria</option>
+                            <option value="Clínica">Clínica</option>
+                            <option value="Endodontia">Endodontia</option>
+                            <option value="Periodontia">Periodontia</option>
+                        </select>
+                        <label class="required" for="tratamentos"
+                            >Tratamento<span style="color: red"> *</span></label
+                        >
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea
+                            class="form-control"
+                            placeholder="Deixe um comentário aqui"
+                            id="floatingTextarea2"
+                            style="height: 100px"
+                        ></textarea>
+                        <label for="floatingTextarea2">Comentários</label>
+                    </div>
+                    <div class="d-grid p-3">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </article>
+        </main>
+
+        <footer class="bg-dark-subtle">
+            <section
+                class="footer-top d-flex flex-wrap justify-content-center align-items-center"
+            >
+                <a class="navbar-brand" href="#"
+                    ><img
+                        src="./img/newOdonto.png"
+                        id="logo-footer"
+                        width="75"
+                        class=""
+                    />NEWODONTO</a
+                >
+
+                <a
+                    href="https://instagram.com/mdteixeira"
+                    target="_blank"
+                    class="mb-5 mt-lg-0 mt-3 mb-lg-0"
+                >
+                    <img
+                        class="redes-img img-footer"
+                        src="./img/redes/insta.png"
+                        alt="instagram"
+                    />
+                </a>
+                <a
+                    href="https://api.whatsapp.com/send/?phone=5511993602212"
+                    target="_blank"
+                    class="mb-5 mb-lg-0"
+                >
+                    <img
+                        class="redes-img img-footer"
+                        src="./img/redes/whatsapp.png"
+                        alt="whatsapp"
+                    />
+                </a>
+                <a href="tel:993602212" class="mb-5 mb-lg-0">
+                    <img
+                        class="redes-img img-footer"
+                        src="./img/redes/telefone.png"
+                        alt="telefone"
+                    />
+                </a>
+                <a href="" target="_blank" class="mb-5 mb-lg-0">
+                    <img
+                        class="redes-img img-footer"
+                        src="./img/redes/facebook.png"
+                        alt="facebook"
+                    />
+                </a>
+            </section>
+            <section class="copyright">
+                <p>© Website por <b>NOLS - 2023</b></p>
+            </section>
+        </footer>
 
         <a
             id="chat"
-            class="btn rounded rounded-circle bg-warning d-flex align-content-end justify-content-center"
+            class="visually-hidden btn rounded rounded-circle bg-warning d-flex align-content-end justify-content-center"
             href=""
             ><img src="./img/chat.png" id="img-chat" class="" alt=""
         /></a>
+        <a
+            class="btn btn-outline-secondary rounded-4 border-2 visually-hidden"
+            id="toTop"
+            href="#inicio"
+            role="button"
+            ><img id="img1" src="./img/to-top.png" alt="Imagem Scroll Up"
+        /></a>
+        <script>
+            let mybutton = document.getElementById('toTop');
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 150 ||
+                    document.documentElement.scrollTop > 150
+                ) {
+                    document
+                        .getElementById('toTop')
+                        .classList.remove('visually-hidden');
+                } else {
+                    document
+                        .getElementById('toTop')
+                        .classList.add('visually-hidden');
+                }
+            }
 
-        <footer class="fixed-bottom"></footer>
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

@@ -1,0 +1,6 @@
+.card:hover {
+    scale: 1.01;
+    & .card-title {
+        text-decoration: underline;
+    }
+}
