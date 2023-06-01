@@ -68,3 +68,8 @@ footer {
     height: 30px;
     filter: invert(1);
 }
+
+.redes a:hover {
+    filter: contrast(200%);
+    scale: 1.1;
+}
