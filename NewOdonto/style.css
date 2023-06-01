@@ -1,0 +1,70 @@
+.navbar {
+    height: 75px;
+    background-color: #1fa4bc;
+}
+
+.redes {
+    margin-top: 75px;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
+.navbar * {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white !important;
+}
+
+.redes {
+    padding: 1rem;
+}
+
+.redes-img {
+    margin: 0 2rem;
+    width: 45px;
+    filter: invert(50%) sepia(100%);
+}
+
+.carousel-item img {
+    filter: contrast(65%) saturate(110%);
+}
+
+#logo {
+    padding: 0.5rem;
+    height: 75px;
+    width: 75px;
+    filter: invert(1);
+    margin-right: 1rem;
+}
+
+footer {
+    height: 50px;
+    width: 100vw;
+    background-color: #1fa4bc;
+}
+
+#sorrirTexto {
+    font-size: 3rem;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 45%;
+    right: 10%;
+}
+
+#chat {
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    height: 50px;
+    width: 50px;
+}
+
+#img-chat {
+    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
