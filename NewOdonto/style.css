@@ -46,7 +46,6 @@ html {
 }
 
 .carousel-item {
-    height: 95vh;
     filter: contrast(50%);
 }
 
