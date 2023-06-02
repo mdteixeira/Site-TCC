@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 .navbar {
     height: 4rem;
 }
@@ -181,6 +185,7 @@ input::-webkit-inner-spin-button {
 }
 
 .required::after {
+    font-family: 'Poppins', sans-serif;
     margin-left: 0.2rem;
     color: red;
     content: '*';
@@ -220,6 +225,7 @@ footer a:hover {
 }
 
 #toTop:hover::after {
+    font-family: 'Poppins', sans-serif;
     color: black;
     line-height: 200%;
     content: 'Início';
