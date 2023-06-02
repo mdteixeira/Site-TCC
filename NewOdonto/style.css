@@ -118,6 +118,7 @@ a.nav-link:hover, .navbar-brand:hover {
 }
 
 .navbar-collapse.show {
+    height: 100vh;
     justify-content: center !important;
     transition: 1.5s cubic-bezier(0.58, 0.3, 0.005, 1) !important;
     position: absolute;
