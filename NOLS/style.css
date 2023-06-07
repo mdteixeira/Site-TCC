@@ -1,0 +1,144 @@
+@keyframes moveBg {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg {
+    filter: drop-shadow();
+    animation: moveBg 55s ease infinite;
+    background-image: url(bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 300% 100%;
+}
+
+top {
+    backdrop-filter: brightness(50%) blur(0.1px);
+    height: 100vh;
+}
+
+* {
+    font-size: 1.25rem;
+}
+
+
+header {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: 0.3s;
+}
+
+header:hover {
+    transition: 0.3s;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+span {
+    filter: brightness(150%);
+    font-weight: 500;
+    background: #121fcf;
+    background: linear-gradient(to left, #121fcf 0%, #00bacf 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#primeiro {
+    justify-items: center;
+}
+
+.card {
+    border: none !important;
+    transition: 0.5s;
+    text-align: center;
+    background: transparent !important;
+}
+
+.card:hover {
+    transition: 0.5s;
+    scale: 1.02;
+    background: rgba(45, 45, 45, 0.5)!important;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.card:hover h5 {
+    transition: 0.2s;
+    filter: brightness(150%);
+    scale: 1.2;
+    font-weight: 500;
+    background: #121fcf;
+    background: linear-gradient(to left, #121fcf 0%, #00bacf 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card img {
+    padding: 1rem;
+}
+
+#feedbacks img {
+    width: 10rem;
+}
+
+#NOlogo {
+    filter: invert(1);
+}
+
+#grid1 {
+    width: 100%;
+}
+
+aside.col {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#navbar2 {
+    width: 100vw;
+    height: 4rem;
+    background: black;
+    z-index: 2000;
+}
+
+ul {
+    list-style-type: '|   ';
+}
+
+.nav-link:hover {
+    background: #121fcf;
+    background: linear-gradient(to left, #121fcf 0%, #00bacf 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+footer li:hover {
+    background: #121fcf;
+    background: linear-gradient(to left, #121fcf 0%, #00bacf 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-outline-info:hover {
+    border: transparent;
+    background: linear-gradient(to left, #121fcf 0%, #00bacf 100%);
+}
