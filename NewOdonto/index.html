@@ -21,9 +21,40 @@
             rel="stylesheet"
         />
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <style>
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 700,
+              'GRAD' 0,
+              'opsz' 48;
+            }
+            </style>
+
         <title>NewOdonto</title>
     </head>
     <body id="inicio">
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll('.reveal');
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add('active');
+                    } else {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', reveal);
+        </script>
         <header>
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
@@ -127,9 +158,9 @@
         </div>
         <div id="headerSticky" class="sticky-top"></div>
         <article
-            class="bg-body-tertiary redes d-none d-lg-flex justify-content-center"
+            class="bg-body-tertiary redes d-md-flex d-none mw-100 justify-content-center"
         >
-            <a href="https://instagram.com/mdteixeira" target="_blank">
+            <a href="https://instagram.com/newOdontoSp" target="_blank">
                 <img
                     class="redes-img"
                     src="./img/redes/insta.png"
@@ -163,8 +194,11 @@
         </article>
 
         <main>
-            <article class="bg-body-secondary p-lg-4 py-5" id="Tratamentos">
-                <br><br>
+            <article
+                class="bg-body-secondary p-lg-4 py-5 reveal"
+                id="Tratamentos"
+            >
+                <br /><br />
                 <h2 class="fw-bold fs-1 mx-4 pt-3">Nossos tratamentos</h2>
                 <div class="cardContainer py-3">
                     <a href="#">
@@ -238,7 +272,8 @@
                                         Endodontia
                                     </h5>
                                     <p class="card-text">
-                                        Você sem dores nos dentes
+                                        Você sem dores ou desconfortos nos
+                                        dentes
                                     </p>
                                 </div>
                             </div>
@@ -266,8 +301,8 @@
                 </div>
             </article>
 
-            <article class="my-5 p-4" id="OndeEstamos">
-                <br><br>
+            <article class="my-5 p-4 reveal" id="OndeEstamos">
+                <br /><br />
                 <h2 class="fw-bold fs-1">Onde Estamos</h2>
                 <p class="mt-3 fs-4">
                     Estamos localizados em Santana,
@@ -302,8 +337,8 @@
                 </div>
             </article>
 
-            <article class="mt-5 p-4 bg-body-secondary" id="FaleConosco">
-                <br><br>
+            <article class="mt-5 p-4 bg-body-secondary reveal" id="FaleConosco">
+                <br /><br />
                 <h2 class="fw-bold fs-1 mb-5">Entre em contato com a gente!</h2>
                 <form class="px-lg-5 needs-validation">
                     <div class="d-lg-flex gap-lg-3">
@@ -387,8 +422,13 @@
                         <label for="floatingTextarea2">Comentários</label>
                     </div>
                     <div class="d-grid p-3">
-                        <button type="submit" class="btn btn-info text-white btn-lg">
-                            Enviar
+                        <button
+                            type="submit"
+                            class="btn btn-info text-white btn-lg d-flex align-items-center justify-content-center py-3"
+                        >
+                            Enviar <span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
                         </button>
                     </div>
                 </form>
@@ -408,7 +448,7 @@
                     />NEWODONTO</a
                 >
                 <a
-                    href="https://instagram.com/mdteixeira"
+                    href="https://instagram.com/newOdontoSp"
                     target="_blank"
                     class="mb-5 mt-lg-0 mb-lg-0"
                 >

@@ -155,7 +155,7 @@
                 </top>
             </div>
             <section
-                class="d-grid row-cols-md-2 row-cols-1 align-content-center my-5"
+                class="d-grid row-cols-md-2 row-cols-1 align-content-center my-5 reveal"
                 id="primeiro"
             >
                 <div class="row my-5 align-items-center" id="grid1">
@@ -183,7 +183,7 @@
                     </aside> -->
                 </div>
             </section>
-            <section id="portfolio" class="bg-dark-subtle p-md-5 pt-5 px-3">
+            <section id="portfolio" class="bg-dark-subtle p-md-5 pt-5 px-3 reveal">
                 <h2 class="mb-5">Alguns dos nossos clientes</h2>
 
                 <div class="row-cols-1">
@@ -252,7 +252,7 @@
                     </div>
                 </div>
             </section>
-            <section id="feedbacks" class="bg-dark p-md-5 pt-5 px-3">
+            <section id="feedbacks" class="bg-dark p-md-5 pt-5 px-3 reveal">
                 <h2 class="mb-5">Feedbacks e avaliações</h2>
                 <div class="card-group">
                     <div class="card align-items-center">
@@ -305,7 +305,7 @@
                 </div>
             </section>
         </main>
-        <article class="mt-5 bg-dark m-lg-5 rounded-5" id="contato">
+        <article class="mt-5 bg-dark m-lg-5 rounded-5 reveal" id="contato">
             <br /><br />
             <h2 class="mt-2 text-center px-3 py-3 mb-3">
                 Entre em contato conosco!
@@ -446,5 +446,24 @@
             crossorigin="anonymous"
         ></script>
         <script src="script.js"></script>
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll('.reveal');
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add('active');
+                    } else {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', reveal);
+        </script>
     </body>
 </html>

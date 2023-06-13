@@ -10,7 +10,8 @@ html {
     height: 4rem;
 }
 
-a.nav-link:hover, .navbar-brand:hover {
+a.nav-link:hover,
+.navbar-brand:hover {
     color: #9af0ff !important;
 }
 
@@ -31,12 +32,12 @@ a.nav-link:hover, .navbar-brand:hover {
 
 .card {
     margin: 1rem;
-    white-space:normal;
+    white-space: normal;
 }
 
 .card:hover {
     scale: 1.01;
-    box-shadow: 0 0 0.3rem 0.1px rgba(100, 100, 100, 0.5);
+    box-shadow: 0 0 1rem 0.1px rgba(100, 100, 100, 0.5);
 }
 .navbar-brand {
     font-size: 1.5rem !important;
@@ -112,7 +113,7 @@ a.nav-link:hover, .navbar-brand:hover {
 
 .card img {
     width: 300px;
-    padding: 35% 25% 10% 25% ;
+    padding: 35% 25% 10% 25%;
 }
 
 .navbar-collapse {
@@ -127,7 +128,7 @@ a.nav-link:hover, .navbar-brand:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    
+
     background: rgba(31, 164, 188, 0.9);
     display: flex;
     width: 100%;
@@ -178,8 +179,8 @@ a.nav-link:hover, .navbar-brand:hover {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .required::after {
@@ -207,7 +208,7 @@ footer {
 }
 
 footer a:hover {
-    filter: contrast(25%)
+    filter: contrast(25%);
 }
 
 #toTop {
@@ -228,7 +229,6 @@ footer a:hover {
     line-height: 200%;
     content: 'Início';
 }
-
 
 #img1 {
     filter: invert(1);
@@ -271,3 +271,109 @@ strong {
     width: 98vw;
     z-index: 99;
 }
+
+.card:hover {
+    background-color: #1fa4bc !important;
+    transition: 0.3s;
+}
+
+.card:hover img {
+    filter: opacity(0);
+}
+
+.card:hover .card-title {
+    transition: 0.3s;
+    font-weight: 700;
+    scale: 1.3 !important;
+    transform: translateY(-2.5rem);
+}
+
+.card:hover p {
+    display: none;
+}
+
+.card:hover::after {
+    position: absolute;
+    font-size: 2rem;
+    top: 40%;
+    left: 22%;
+    content: 'Saiba Mais';
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4fcee5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    cursor: grabbing !important;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.btn-info {
+    border: none !important;
+    background-color: #1fa4bc !important;
+}
+.btn-info:hover {
+    border: none !important;
+    background-color: #25c5e2 !important;
+}
+
+.btn-info span {
+    opacity: 0;
+    font-size: 0;
+}
+
+.btn-info:hover span {
+    font-size: larger;
+    margin-left: 0.2rem;
+    transition-delay: 0.2s;
+    opacity: 100% !important;
+    transition: 0.4s !important;
+}
+
+.btn-info:active span {
+    transition: 3s;
+    transform: translateX(30px);
+}
+
+.btn-info:active {
+    background-color: #4fcee5 !important;
+}
+
+input:focus, select:focus {
+    border: solid 1px #00d9ff !important;
+    box-shadow: none !important;
+}
+
+input:valid {
+    transition: 0.4s;
+    border: solid 2px #00d9ff !important;
+    float: inline-end;
+    content: 'Ok';
+}
+
+textarea:focus {
+    border: solid 3px #00d9ff !important;
+    box-shadow: none !important;
+}
+
