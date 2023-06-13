@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css" />
-        <title>NOLS - Um novo caminho</title>
+        <title>NOLS - Missão</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -94,7 +94,7 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a
-                                        class="nav-link active"
+                                        class="nav-link"
                                         aria-current="page"
                                         href="./index.html"
                                         >Início</a
@@ -106,7 +106,9 @@
                                     >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./historia.html"
+                                    <a
+                                        class="nav-link active"
+                                        href="./historia.html"
                                         >Nossa história</a
                                     >
                                 </li>
@@ -135,7 +137,6 @@
                                                 >Valores</a
                                             >
                                         </li>
- 
                                     </ul>
                                 </li>
                             </ul>
@@ -143,27 +144,20 @@
                     </div>
                 </nav>
             </header>
-            <div class="bg">
-                <top
-                    class="d-grid align-content-center justify-content-center text-center"
-                >
-                    <img src="logo.png" alt="Logo" class="img-fluid" />
-                    <p class="lead">
-                        A sua empresa<br />
-                        <span class="text-primary">Por um novo caminho</span>
-                    </p>
-                </top>
-            </div>
             <section
-                class="d-grid row-cols-md-2 row-cols-1 align-content-center my-5"
+                class="d-grid row-cols-md-2 row-cols-1 align-content-center mt-4 bg-2 pb-5"
                 id="primeiro"
             >
-                <div class="row my-5 align-items-center" id="grid1">
-                    <main class="col-md">
-                        <h2>O futuro da sua empresa</h2>
-                        <p class="text-center">
-                            A sua empresa com presença
-                            <span>na Web</span>
+                <div class="my-5 align-items-center p-md-5 py-5" id="hero">
+                    <h2>Nossa história</h2>
+                    <main class="justify-content-center">
+                        <p class="fs-4 mt-4 ">
+                            A NOLS nasceu solucionando problemas. Pessoas
+                            próximas precisavam de um site mas não sabiam como,
+                            tínhamos o conhecimento para fazer e decidimos
+                            ajudar. Após isso, percebemos que muitas pequenas
+                            empresas têm esse mesmo problema, sabendo que existe
+                            esse espaço no mercado, decidimos criar a NOLS.
                         </p>
                         <div class="flex text-center mt-5">
                             <button class="btn btn-dark mb-3">
@@ -174,134 +168,6 @@
                             </button>
                         </div>
                     </main>
-                    <!-- <aside class="col-md p-0 ">
-                        <img
-                            src="./bg-big.png"
-                            alt=""
-                            class="img-fluid float-end d-none d-md-block"
-                        />
-                    </aside> -->
-                </div>
-            </section>
-            <section id="portfolio" class="bg-dark-subtle p-md-5 pt-5 px-3">
-                <h2 class="mb-5">Alguns dos nossos clientes</h2>
-
-                <div class="row-cols-1">
-                    <div class="row g-0">
-                        <a
-                            href="https://mdteixeira.github.io/Site-TCC/NewOdonto"
-                            target="_blank"
-                            class="text-decoration-none"
-                        >
-                            <div class="card mb-3">
-                                <div class="row g-0 align-items-center">
-                                    <div class="col-md-5">
-                                        <img
-                                            src="./../newOdonto.png"
-                                            class="img-fluid"
-                                            alt="..."
-                                        />
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="card-body">
-                                            <h5 class="card-title fs-1">
-                                                NewOdonto
-                                            </h5>
-                                            <p class="card-text">
-                                                Clínica odontológica na Zona
-                                                Norte de São Paulo
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <hr />
-
-                        <div class="col">
-                            <a
-                                href="https://mdteixeira.github.io/Site-TCC/TapHouse"
-                                target="_blank"
-                                class="text-decoration-none"
-                            >
-                                <div class="card mb-3">
-                                    <div class="row g-0 align-items-center">
-                                        <div class="col-md-7">
-                                            <div class="card-body">
-                                                <h5 class="card-title fs-1">
-                                                    Tap House
-                                                </h5>
-                                                <p class="card-text">
-                                                    Clínica odontológica na Zona
-                                                    Norte de São Paulo
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <img
-                                                src="./../TapHouse.png"
-                                                class="img-fluid"
-                                                alt="..."
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="feedbacks" class="bg-dark p-md-5 pt-5 px-3">
-                <h2 class="mb-5">Feedbacks e avaliações</h2>
-                <div class="card-group">
-                    <div class="card align-items-center">
-                        <img
-                            src="./newOdontoLogo.png"
-                            id="NOlogo"
-                            class="card-img-top text-center"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <span class="material-symbols-rounded">
-                                    star star star star star
-                                </span>
-                            </h5>
-                            <p class="card-text">
-                                "Aumentou nossa presença na internet, assim
-                                conseguindo novos clientes e reconhecimento. Com
-                                o novo site nossos agendamentos nunca foram tão
-                                facéis e organizados."
-                            </p>
-                            <p class="card-text text-secondary fs-6">
-                                NewOdonto
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card align-items-center">
-                        <img
-                            src="./tapHouseLogo.png"
-                            class="card-img-top"
-                            alt="..."
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <span class="material-symbols-rounded">
-                                    star star star star star
-                                </span>
-                            </h5>
-                            <p class="card-text">
-                                "Ótimo atendimento, super personalizado!
-                                Conseguimos acompanhar todo o processo. Entregas
-                                rápidas e eficientes, já estou vendo um aumento
-                                de demanda."
-                            </p>
-                            <p class="card-text text-secondary fs-6">
-                                Santa Inês Tap House
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </section>
         </main>
@@ -356,7 +222,7 @@
         </article>
         <footer class="py-5 d-grid row-cols-auto">
             <div class="row w-100">
-                <div class="col">
+                <div class="col-md">
                     <img src="logo.png" alt="Logo NOLS" class="img-fluid" />
                 </div>
                 <section class="col">
@@ -364,7 +230,7 @@
                     <ul>
                         <li>
                             <a
-                                href="http://"
+                                href="./equipe.html"
                                 class="text-white-50 text-decoration-none"
                                 rel="noopener noreferrer"
                                 >Equipe</a
@@ -372,15 +238,14 @@
                         </li>
                         <li>
                             <a
-                                href="http://"
+                                href="./missao.html"
                                 class="text-white-50 text-decoration-none"
-                                rel="noopener noreferrer"
                                 >Missão</a
                             >
                         </li>
                         <li>
                             <a
-                                href="http://"
+                                href="./valores.html"
                                 class="text-white-50 text-decoration-none"
                                 rel="noopener noreferrer"
                                 >Valores</a
@@ -388,7 +253,7 @@
                         </li>
                         <li>
                             <a
-                                href="http://"
+                                href="./historia.html"
                                 class="text-white-50 text-decoration-none"
                                 rel="noopener noreferrer"
                                 >História</a
