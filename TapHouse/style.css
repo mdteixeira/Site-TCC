@@ -174,8 +174,15 @@ footer {
     padding: 3rem;
 }
 
-footer a:hover {
+footer a {
     padding: 10px;
+}
+
+footer img {
+    filter: brightness(500%);
+}
+
+footer a:hover {
     background-color: var(--bs-warning);
 }
 

@@ -15,7 +15,6 @@
 }
 
 .bg {
-    filter: drop-shadow();
     animation: moveBg 55s ease infinite;
     background-image: url(bg.png);
     background-position: bottom;
@@ -25,7 +24,6 @@
 }
 
 top {
-    backdrop-filter: brightness(50%) blur(0.1px);
     height: 100vh;
 }
 
