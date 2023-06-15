@@ -27,16 +27,16 @@
                     'opsz' 48;
             }
         </style>
-                    <link
-                    rel="stylesheet"
-                    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-                />
-            <style>
-                .material-symbols-outlined {
-                    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0,
-                        'opsz' 40;
-                }
-            </style>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0,
+                    'opsz' 40;
+            }
+        </style>
         <script>
             let mybutton = document.getElementById('toTop');
             window.onscroll = function () {
@@ -153,33 +153,33 @@
                 class="d-grid row-cols-md-2 row-cols-1 align-content-center mt-4 bg-2 pb-5"
                 id="primeiro"
             >
-                <div
-                    class="row my-5 align-items-center p-md-5 py-5"
-                    id="hero"
-                >
-                    <h2>Nossa missão</h2>
+                <div class="row my-5 align-items-center p-md-5 py-5" id="hero">
+                    <h2>Nossa visão</h2>
                     <main class="col-md justify-content-center">
-                        <p class="fs-4 text-center">
-                            Criar sites para os mais diversos nichos, fornecendo
-                            <span class="fs-4">direcionamento</span> e
-                            <span class="fs-4">soluções digitais</span> aos
-                            nossos clientes.
+                        <p class="fs-4 my-5 text-center">
+                            Ser reconhecida pela <span class="fs-4 fw-bold">excelência</span> de nossos serviços,
+                            alcançando uma alta gama de <span class="fs-4 fw-bold">clientes satisfeitos</span>,
+                            buscando sempre <span class="fs-4 fw-bold">inovações</span>.
                         </p>
                         <div class="flex text-center mt-5">
-                            <button class="btn btn-dark mb-3">
-                                Saiba mais
-                            </button>
-                            <button class="btn btn-outline-info mb-3">
-                                Entre em contato
-                            </button>
+
+                            <a href="#Contato" class="btn btn-outline-info mb-3"
+                                >Entre em contato</a
+                            >
                         </div>
                     </main>
                     <aside class="col-md-3 text-center">
-                        <img src="./missao.png" alt="" class="img-fluid" width="300" />
+                        <img
+                            src="./img/visao.svg"
+                            alt=""
+                            class="img-fluid"
+                            width="300"
+                        />
                     </aside>
                 </div>
             </section>
         </main>
+        <hr id="Contato" class="opacity-0" />
         <article class="mt-5 bg-dark m-lg-5 rounded-5" id="contato">
             <br /><br />
             <h2 class="mt-2 text-center px-3 py-3 mb-3">
@@ -203,9 +203,7 @@
                             id="sobrenome"
                             placeholder="Sobrenome"
                         />
-                        <label class="bg-none" for="sobrenome"
-                            >Sobrenome</label
-                        >
+                        <label class="bg-none" for="sobrenome">Sobrenome</label>
                     </div>
                 </div>
                 <div class="form-floating mb-3">
@@ -215,9 +213,7 @@
                         id="comentario"
                         style="height: 100px"
                     ></textarea>
-                    <label class="bg-none" for="comentario"
-                        >Mensagem</label
-                    >
+                    <label class="bg-none" for="comentario">Mensagem</label>
                 </div>
                 <div class="d-grid p-3">
                     <button
@@ -227,7 +223,7 @@
                     >
                         Enviar
                         <span class="material-symbols-outlined">
-                        chevron_right
+                            chevron_right
                         </span>
                     </button>
                 </div>
