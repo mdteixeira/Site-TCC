@@ -16,7 +16,7 @@
 
 .bg {
     animation: moveBg 55s ease infinite;
-    background-image: url(bg.png);
+    background-image: url(./img/bg.png);
     background-position: bottom;
     background-repeat: no-repeat;
     height: 100vh;
@@ -165,7 +165,7 @@ footer li:hover {
 
 .bg-2 {
     background-position: middle;
-    background-image: url(bg-big.png);
+    background-image: url(./img/bg-big.png);
     background-size: cover !important;
     background-repeat: no-repeat;
 }
