@@ -73,7 +73,7 @@ a.nav-link:hover,
 }
 
 #chat {
-    z-index: 5;
+    z-index: 100;
     position: fixed;
     top: 50%;
     right: 30px;
@@ -399,4 +399,29 @@ a[style="animation:none!important;background-color:rgba(238,238,238,0.9)!importa
 
 section p {
     text-align: justify;
+}
+
+.img-tratamentos {
+    display: block;
+    margin: auto;
+}
+
+input, textarea, select {
+    border: none !important;
+}
+
+#Instagram img {
+    border: 5px solid #00d9ff;
+}
+
+#Depoimentos .carousel-item {
+    height: 15rem
+}
+
+#Depoimentos {
+    background-color: rgba(0, 217, 255, 0.1);
+}
+
+.carousel-indicators button {
+    background-color: #25c5e2 !important;
 }
