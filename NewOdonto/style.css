@@ -425,3 +425,10 @@ input, textarea, select {
 .carousel-indicators button {
     background-color: #25c5e2 !important;
 }
+
+.dropdown-item {
+    color: black !important;
+}
+.dropdown-menu {
+    border: none !important;
+}
