@@ -97,35 +97,35 @@
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            href="./tratamentos.html"
+                                            href="./tratamentos.html#estetica"
                                             >Estética</a
                                         >
                                     </li>
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            href="./tratamentos.html"
+                                            href="./tratamentos.html#clinico"
                                             >Clínico</a
                                         >
                                     </li>
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            href="./tratamentos.html"
+                                            href="./tratamentos.html#odontopediatria"
                                             >Odontopediatria</a
                                         >
                                     </li>
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            href="./tratamentos.html"
+                                            href="./tratamentos.html#endodontia"
                                             >Endodontia</a
                                         >
                                     </li>
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            href="./tratamentos.html"
+                                            href="./tratamentos.html#periodontia"
                                             >Periodontia</a
                                         >
                                     </li>
@@ -148,8 +148,8 @@
         </header>
 
         <div class="img-principal">
-            <div class="d-lg-grid d-none align-items-center topText d-none">
-                <div class="row justify-content-around d-none">
+            <div class="d-lg-grid d-none align-items-center topText">
+                <div class="row justify-content-around">
                     <div class="">
                         <img
                             id="logoPrincipal"
@@ -216,7 +216,7 @@
         </div>
         <div id="headerSticky" class="sticky-top"></div>
         <article
-            class="bg-body-tertiary redes d-md-flex d-none mw-100 justify-content-center"
+            class="bg-body-tertiary redes d-md-flex d-none mw-100 align-items-center justify-content-center"
         >
             <a href="https://instagram.com/newOdontoSp" target="_blank">
                 <img
@@ -225,6 +225,7 @@
                     alt="instagram"
                 />
             </a>
+            <p>/NewOdontoSP</p>
             <a
                 href="https://api.whatsapp.com/send/?phone=5511993602212"
                 target="_blank"
@@ -235,13 +236,14 @@
                     alt="whatsapp"
                 />
             </a>
+            <p>(11) 2949-1110</p>
             <a href="tel:993602212">
                 <img
                     class="redes-img"
                     src="./img/redes/telefone.png"
                     alt="telefone"
-                />
-            </a>
+                /> </a
+            ><p>(11) 99360-2212</p>
         </article>
 
         <main>
@@ -256,7 +258,7 @@
                 </div>
 
                 <div class="cardContainer pt-3 pb-5">
-                    <a href="./tratamentos.html">
+                    <a href="./tratamentos.html#estetica">
                         <section id="card1">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -275,7 +277,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="./tratamentos.html">
+                    <a href="./tratamentos.html#clinico">
                         <section id="card2">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -295,7 +297,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="./tratamentos.html">
+                    <a href="./tratamentos.html#odontopediatria">
                         <section id="card3">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -314,7 +316,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="./tratamentos.html">
+                    <a href="./tratamentos.html#endodontia">
                         <section id="card4">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -334,7 +336,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="./tratamentos.html">
+                    <a href="./tratamentos.html#periodontia">
                         <section id="card5">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -733,6 +735,24 @@
                         </select>
                         <label class="required" for="tratamentos"
                             >Tratamento<span style="color: red"> *</span></label
+                        >
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select
+                            class="form-select"
+                            id="Unidades"
+                            aria-label="Selecionar Unidade"
+                            required
+                        >
+                            <option selected disabled hidden>
+                                Selecione uma opção
+                            </option>
+                            <option value="Santana">Santana</option>
+                            <option value="Santo Amaro">Santo Amaro</option>
+                            <option value="Penha">Penha</option>
+                        </select>
+                        <label class="required" for="Unidades"
+                            >Unidade<span style="color: red"> *</span></label
                         >
                     </div>
                     <div class="form-floating mb-3">

@@ -49,8 +49,14 @@ a.nav-link:hover,
     color: white !important;
 }
 
+.redes p{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
 .redes-img {
-    margin: 0 2rem;
+    margin-right: 0.5rem;
+    margin-left: 3rem;
     width: 2.5rem;
     filter: invert(50%) sepia(100%);
 }
@@ -90,7 +96,6 @@ a.nav-link:hover,
 
 .redes a:hover {
     filter: contrast(200%);
-    scale: 1.1;
 }
 
 .navbar-toggler {
