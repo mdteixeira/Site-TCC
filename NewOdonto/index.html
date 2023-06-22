@@ -36,7 +36,7 @@
         <title>NewOdonto</title>
     </head>
     <body id="inicio">
-        <script>
+        <!-- <script>
             function reveal() {
                 var reveals = document.querySelectorAll('.reveal');
 
@@ -54,9 +54,9 @@
             }
 
             window.addEventListener('scroll', reveal);
-        </script>
+        </script> -->
         <header>
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-lg fixed-top mx-4">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"
                         ><img
@@ -81,7 +81,7 @@
                         class="collapse navbar-collapse justify-content-end"
                         id="navbarNav"
                     >
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav gap-3">
                             <li class="nav-item"></li>
                             <li class="nav-item dropdown">
                                 <a
@@ -95,27 +95,37 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="./tratamentos.html#estetica"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./tratamentos.html"
                                             >Estética</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="./tratamentos.html#clinico"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./tratamentos.html"
                                             >Clínico</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="./tratamentos.html#odontopediatria"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./tratamentos.html"
                                             >Odontopediatria</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="./tratamentos.html#endodontia"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./tratamentos.html"
                                             >Endodontia</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="./tratamentos.html#periodontia"
+                                        <a
+                                            class="dropdown-item"
+                                            href="./tratamentos.html"
                                             >Periodontia</a
                                         >
                                     </li>
@@ -138,8 +148,8 @@
         </header>
 
         <div class="img-principal">
-            <div class="d-lg-grid d-none align-items-center teste">
-                <div class="row justify-content-between">
+            <div class="d-lg-grid d-none align-items-center topText d-none">
+                <div class="row justify-content-around d-none">
                     <div class="">
                         <img
                             id="logoPrincipal"
@@ -166,26 +176,40 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img
-                                src="./img/odonto1.jpg"
+                                src="./img/odonto1.png"
                                 class="d-block w-100"
                                 alt="..."
                             />
+                            <div class="carousel-caption d-md-block">
+                                <h5>Atendimento Personalizado</h5>
+                                <p>
+                                    Aqui, priorizamos seu
+                                    <span>bem estar</span>.
+                                </p>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img
-                                src="./img/odonto2.jpg"
+                                src="./img/odonto2.png"
                                 class="d-block w-100"
                                 alt="..."
                             />
+                            <div class="carousel-caption d-md-block">
+                                <h5>Clínica Especializada</h5>
+                                <p>Profissionais bem qualificados</p>
+                            </div>
                         </div>
-
-                        <!-- <div class="carousel-item">
+                        <div class="carousel-item">
                             <img
-                                src="./img/odonto1.jpg"
+                                src="./img/odonto3.png"
                                 class="d-block w-100"
                                 alt="..."
                             />
-                        </div> -->
+                            <div class="carousel-caption d-md-block">
+                                <h5>Qualidade garantida</h5>
+                                <p>Alto padrão de atendimento e qualidade</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -226,9 +250,13 @@
                 id="Tratamentos"
             >
                 <br /><br />
-                <h2 class="fw-bold fs-1 mx-4 pt-3">Nossos tratamentos</h2>
-                <div class="cardContainer py-3">
-                    <a href="./tratamentos.html#estetica">
+                <div class="text-center">
+                    <img src="./img/icones/sorriso.png" alt="icone sorriso" />
+                    <h2 class="fw-bold fs-1 mx-4 pt-3">Nossos tratamentos</h2>
+                </div>
+
+                <div class="cardContainer pt-3 pb-5">
+                    <a href="./tratamentos.html">
                         <section id="card1">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -247,7 +275,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="./tratamentos.html#clinico">
+                    <a href="./tratamentos.html">
                         <section id="card2">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -267,7 +295,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="./tratamentos.html#odontopediatria">
+                    <a href="./tratamentos.html">
                         <section id="card3">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -286,7 +314,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="./tratamentos.html#endodontia">
+                    <a href="./tratamentos.html">
                         <section id="card4">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -306,7 +334,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="./tratamentos.html#periodontia">
+                    <a href="./tratamentos.html">
                         <section id="card5">
                             <div class="card rounded rounded-5 text-bg-dark">
                                 <img
@@ -327,9 +355,47 @@
                     </a>
                 </div>
             </article>
+            <article
+                class="py-5 bg-dark text-white reveal text-center"
+                id="conquistas"
+            >
+                <h2 class="fw-bold fs-1 mx-4 pt-3 mb-5">Sobre nós</h2>
+                <hr class="w-50 d-flex mx-auto mb-5" />
 
+                <div
+                    class="d-flex justify-content-evenly text-center align-items-center"
+                >
+                    <div class="col">
+                        <h2>5+ anos</h2>
+                        <p>de experiência</p>
+                        <img
+                            src="./img/icones/experiencia.png"
+                            alt="icone experiência"
+                        />
+                    </div>
+                    <div class="col">
+                        <h2>3 unidades</h2>
+                        <p>para te atender</p>
+                        <img src="./img/icones/locais.png" alt="icone locais" />
+                    </div>
+                    <div class="col">
+                        <h2>1000+</h2>
+                        <p>pacientes satisfeitos</p>
+                        <img
+                            src="./img/icones/pessoa.png"
+                            alt="icone pessoas"
+                        />
+                    </div>
+                </div>
+            </article>
             <article class="py-5 p-4 reveal" id="Depoimentos">
-                <h2 class="fw-bold fs-1 mb-5">Depoimento de clientes</h2>
+                <div class="text-center">
+                    <img
+                        src="./img/icones/depoimentos.png"
+                        alt="icone depoimentos"
+                    />
+                    <h2 class="fw-bold fs-1 mb-5">Depoimento de clientes</h2>
+                </div>
                 <div
                     id="carousel-depoimentos"
                     class="carousel slide"
@@ -424,9 +490,15 @@
                     </button>
                 </div>
             </article>
-
             <article class="my-5 p-4 reveal" id="Instagram">
-                <h2 class="fw-bold fs-1 mb-5">NewOdonto no Instagram</h2>
+                <div class="text-center">
+                    <img
+                        src="./img/icones/instagram.png"
+                        alt="icone instagram"
+                        class="border-0"
+                    />
+                    <h2 class="fw-bold fs-1 mb-5">NewOdonto no Instagram</h2>
+                </div>
 
                 <script
                     src="https://static.elfsight.com/platform/platform.js"
@@ -443,43 +515,154 @@
 
             <article class="my-5 p-4 reveal" id="OndeEstamos">
                 <br /><br />
-                <h2 class="fw-bold fs-1">Onde Estamos</h2>
-                <p class="mt-3 fs-4">
-                    Estamos localizados em Santana,
-                    <strong>à 5 minutos andando da estação de metrô</strong>
-                </p>
-                <div class="gmap_canvas">
-                    <iframe
-                        width="100%"
-                        height="300"
-                        id="gmap_canvas"
-                        src="https://maps.google.com/maps?q= Av. Gen. Ataliba Leonel, 245&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0"
-                        scrolling="no"
-                        marginheight="0"
-                        marginwidth="0"
-                    ></iframe
-                    ><style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 100%;
-                            width: 100%;
-                        }</style
-                    ><style>
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 100%;
-                            width: 100%;
-                        }
-                    </style>
+                <div class="text-center">
+                    <img src="./img/icones/locais.png" alt="icone locais" />
+                    <h2 class="fw-bold fs-1">Nossas Unidades</h2>
+                </div>
+                <div class="d-flex flex-nowrap justify-content-evenly mt-5">
+                    <div class="col-2 my-5">
+                        <div id="lista-tratamentos" class="list-group">
+                            <a
+                                class="list-group-item list-group-item-action"
+                                href="#unidade1"
+                                >Santana</a
+                            >
+                            <a
+                                class="list-group-item list-group-item-action"
+                                href="#unidade2"
+                                >Unidade 2</a
+                            >
+                            <a
+                                class="list-group-item list-group-item-action"
+                                href="#unidade3"
+                                >Unidade 3</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div
+                            data-bs-spy="scroll"
+                            data-bs-target="#lista-tratamentos"
+                            data-bs-smooth-scroll="true"
+                            class="overflow-hidden unidades"
+                            tabindex="0"
+                            style="height: 66vh !important"
+                        >
+                            <section id="unidade1" class="mt-3 d-flex gap-5">
+                                <div class="unidade">
+                                    <h2 class="text-center mb-5">
+                                        Unidade Santana
+                                    </h2>
+                                    <p>
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            src="https://img.icons8.com/ios-filled/50/000000/phone.png"
+                                            alt="phone"
+                                        />
+                                        (11) 2949-1110
+                                    </p>
+                                    <p>
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            src="https://img.icons8.com/ios-filled/50/000000/filled-message.png"
+                                            alt="filled-message"
+                                        />
+                                        santana@newodonto.com.br
+                                    </p>
+                                </div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3658.713407725206!2d-46.6257041!3d-23.5068301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef6283c6753e7%3A0xc96724dd19a6d04b!2sInstituto%20da%20Oportunidade%20Social!5e0!3m2!1spt-BR!2sbr!4v1687463996471!5m2!1spt-BR!2sbr"
+                                    width="400"
+                                    height="400"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </section>
+                            <section id="unidade2" class="mt-3 d-flex gap-5">
+                                <div class="unidade">
+                                    <h2 class="text-center mb-5">
+                                        Unidade Santo Amaro
+                                    </h2>
+                                    <p>
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            src="https://img.icons8.com/ios-filled/50/000000/phone.png"
+                                            alt="phone"
+                                        />
+                                        (11) 2949-1110
+                                    </p>
+                                    <p>
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            src="https://img.icons8.com/ios-filled/50/000000/filled-message.png"
+                                            alt="filled-message"
+                                        />
+                                        santana@newodonto.com.br
+                                    </p>
+                                </div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3658.713407725206!2d-46.6257041!3d-23.5068301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef6283c6753e7%3A0xc96724dd19a6d04b!2sInstituto%20da%20Oportunidade%20Social!5e0!3m2!1spt-BR!2sbr!4v1687463996471!5m2!1spt-BR!2sbr"
+                                    width="400"
+                                    height="400"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </section>
+                            <section id="unidade3" class="mt-3 d-flex gap-5">
+                                <div class="unidade">
+                                    <h2 class="text-center mb-5">
+                                        Unidade Penha
+                                    </h2>
+                                    <p>
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            src="https://img.icons8.com/ios-filled/50/000000/phone.png"
+                                            alt="phone"
+                                        />
+                                        (11) 2949-1110
+                                    </p>
+                                    <p>
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            src="https://img.icons8.com/ios-filled/50/000000/filled-message.png"
+                                            alt="filled-message"
+                                        />
+                                        santana@newodonto.com.br
+                                    </p>
+                                </div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3658.713407725206!2d-46.6257041!3d-23.5068301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef6283c6753e7%3A0xc96724dd19a6d04b!2sInstituto%20da%20Oportunidade%20Social!5e0!3m2!1spt-BR!2sbr!4v1687463996471!5m2!1spt-BR!2sbr"
+                                    width="400"
+                                    height="400"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </article>
 
             <article class="mt-5 p-4 bg-body-secondary reveal" id="FaleConosco">
                 <br /><br />
-                <h2 class="fw-bold fs-1 mb-5">Entre em contato com a gente!</h2>
+                <div class="text-center">
+                    <img src="./img/icones/contato.png" alt="icone contato" />
+                    <h2 class="fw-bold fs-1 mb-5">
+                        Entre em contato com a gente!
+                    </h2>
+                </div>
                 <form class="px-lg-5 needs-validation">
                     <div class="d-lg-flex gap-lg-3">
                         <div class="form-floating mb-3 col">

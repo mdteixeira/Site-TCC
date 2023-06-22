@@ -55,10 +55,6 @@ a.nav-link:hover,
     filter: invert(50%) sepia(100%);
 }
 
-.carousel-item {
-    filter: contrast(50%);
-}
-
 #logo {
     width: 3rem;
     margin-right: 1rem;
@@ -262,7 +258,8 @@ strong {
     align-self: center;
 }
 
-.teste {
+.topText {
+    display: none;
     position: absolute;
     padding: 5rem;
     top: 0;
@@ -317,7 +314,7 @@ strong {
     cursor: grabbing !important;
 }
 
-.reveal {
+/* .reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -327,7 +324,7 @@ strong {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
-}
+} */
 
 .btn-info {
     border: none !important;
@@ -360,7 +357,8 @@ strong {
     background-color: #4fcee5 !important;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border: solid 1px #00d9ff !important;
     box-shadow: none !important;
 }
@@ -389,7 +387,7 @@ textarea:focus {
     gap: 1rem;
 }
 
-a[style="animation:none!important;background-color:rgba(238,238,238,0.9)!important;border:none!important;bottom:auto!important;color:rgba(0,0,0,.5)!important;display:inline-flex!important;align-items:center!important;gap:6px!important;float:none!important;height:28px!important;left:50%!important;margin:8px auto!important;opacity:1!important;padding:6px!important;position:relative!important;right:auto!important;top:auto!important;transform:translateX(-50%)!important;zoom:1!important;visibility:visible!important;box-sizing:border-box!important;border-radius:6px!important;font-family:Roboto,Arial,Sans-serif!important;font-size:12px!important;font-weight:700!important;line-height:16px!important;text-align:left!important;text-decoration:none!important;max-width:240px!important;text-indent:0!important;z-index:99999!important;margin-top:20px!important"] {
+a[style='animation:none!important;background-color:rgba(238,238,238,0.9)!important;border:none!important;bottom:auto!important;color:rgba(0,0,0,.5)!important;display:inline-flex!important;align-items:center!important;gap:6px!important;float:none!important;height:28px!important;left:50%!important;margin:8px auto!important;opacity:1!important;padding:6px!important;position:relative!important;right:auto!important;top:auto!important;transform:translateX(-50%)!important;zoom:1!important;visibility:visible!important;box-sizing:border-box!important;border-radius:6px!important;font-family:Roboto,Arial,Sans-serif!important;font-size:12px!important;font-weight:700!important;line-height:16px!important;text-align:left!important;text-decoration:none!important;max-width:240px!important;text-indent:0!important;z-index:99999!important;margin-top:20px!important'] {
     scale: 0;
 }
 
@@ -402,20 +400,20 @@ section p {
 }
 
 .img-tratamentos {
+    padding: 1rem;
+    border: solid 1px #00d9ff;
     display: block;
     margin: auto;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     border: none !important;
 }
 
-#Instagram img {
-    border: 5px solid #00d9ff;
-}
-
 #Depoimentos .carousel-item {
-    height: 15rem
+    height: 15rem;
 }
 
 #Depoimentos {
@@ -431,4 +429,89 @@ input, textarea, select {
 }
 .dropdown-menu {
     border: none !important;
+}
+
+.img-principal .carousel-caption {
+    margin-bottom: 7rem;
+}
+
+.img-principal .carousel-caption h5 {
+    color: #00d9ff !important;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.img-principal .carousel-caption p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#conquistas p {
+    margin: 0;
+}
+
+#conquistas h2 {
+    margin: 0;
+    font-weight: bold;
+    color: #00d9ff;
+}
+
+#conquistas img {
+    margin-top: 1rem;
+}
+
+.tratamentos section {
+    height: 100% !important;
+}
+
+.list-group {
+    margin: auto;
+    width: 75% !important;
+    border: 0 !important;
+    gap: 0.5rem !important;
+}
+
+.list-group-item {
+    font-weight: bold;
+    box-shadow: 0 0.1rem 0.6rem #eee;
+    border: none !important;
+    padding: 1rem !important;
+    border-radius: 1rem !important;
+}
+
+.list-group-item.active {
+    scale: 1.05 !important;
+    background-color: #00d9ff !important;
+}
+
+.unidade h2 {
+    color: #00d9ff;
+    font-weight: bold;
+}
+
+.unidades section {
+    height: 100%;
+}
+
+.unidade h2 {
+    width: 20vw;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: #00d9ff !important;
+}
+
+.btn.btn-outline-info:hover img{
+    filter: grayscale(1) brightness(2) !important;
+}
+
+.btn.btn-outline-info:hover,
+.btn.btn-outline-info:active {
+    color: white !important;
+}
+.btn.btn-outline-info:active {
+    background-color: #1fa4bc !important;
 }
