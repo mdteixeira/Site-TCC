@@ -423,6 +423,10 @@ select {
     height: 15rem;
 }
 
+#Equipe .carousel-item {
+    height: 400px;
+}
+
 #Depoimentos {
     background-color: rgba(0, 217, 255, 0.1);
 }
