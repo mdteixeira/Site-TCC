@@ -2,11 +2,14 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <!-- Link CSS -->
         <link rel="stylesheet" href="style.css" />
+
+        <!-- Link Favicon -->
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
         <!-- Link Bootstrap 5 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -14,6 +17,8 @@
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
             crossorigin="anonymous"
         />
+
+        <!-- Links Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -32,32 +37,21 @@
                     'opsz' 48;
             }
         </style>
+        <!-- Fim Google -->
+
+        <!-- Link Script Página -->
+        <script src="script.js"></script>
 
         <title>NewOdonto</title>
     </head>
+
     <body id="inicio">
-        <!-- <script>
-            function reveal() {
-                var reveals = document.querySelectorAll('.reveal');
-
-                for (var i = 0; i < reveals.length; i++) {
-                    var windowHeight = window.innerHeight;
-                    var elementTop = reveals[i].getBoundingClientRect().top;
-                    var elementVisible = 150;
-
-                    if (elementTop < windowHeight - elementVisible) {
-                        reveals[i].classList.add('active');
-                    } else {
-                        reveals[i].classList.remove('active');
-                    }
-                }
-            }
-
-            window.addEventListener('scroll', reveal);
-        </script> -->
+        <!-- Header -->
         <header>
+            <!-- Nav -->
             <nav class="navbar navbar-expand-lg fixed-top mx-4">
                 <div class="container-fluid">
+                    <!-- Logo Navbar -->
                     <a class="navbar-brand" href="#"
                         ><img
                             src="./img/newOdonto.png"
@@ -66,6 +60,7 @@
                             class=""
                         />NEWODONTO</a
                     >
+                    <!-- Botão Navbar-toggler -->
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -77,12 +72,14 @@
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div
                         class="collapse navbar-collapse justify-content-end"
                         id="navbarNav"
                     >
+                        <!-- Lista de Links Navbar -->
                         <ul class="navbar-nav gap-3">
-                            <li class="nav-item"></li>
+                            <!-- Nav Link Tratamentos -->
                             <li class="nav-item dropdown">
                                 <a
                                     class="nav-link dropdown-toggle"
@@ -93,7 +90,9 @@
                                 >
                                     Tratamentos
                                 </a>
-                                <ul class="dropdown-menu">
+                                <!-- Lista de Links dos Tratamentos do Dropdown -->
+                                <ul class="dropdown-menu dropdown-center">
+                                    <!-- Dropdown link Estética -->
                                     <li>
                                         <a
                                             class="dropdown-item"
@@ -101,6 +100,7 @@
                                             >Estética</a
                                         >
                                     </li>
+                                    <!-- Dropdown link Clínico-->
                                     <li>
                                         <a
                                             class="dropdown-item"
@@ -108,6 +108,7 @@
                                             >Clínico</a
                                         >
                                     </li>
+                                    <!-- Dropdown link Odontopediatria -->
                                     <li>
                                         <a
                                             class="dropdown-item"
@@ -115,6 +116,7 @@
                                             >Odontopediatria</a
                                         >
                                     </li>
+                                    <!-- Dropdown link Endodontia -->
                                     <li>
                                         <a
                                             class="dropdown-item"
@@ -122,6 +124,7 @@
                                             >Endodontia</a
                                         >
                                     </li>
+                                    <!-- Dropdown link Periodontia -->
                                     <li>
                                         <a
                                             class="dropdown-item"
@@ -131,11 +134,15 @@
                                     </li>
                                 </ul>
                             </li>
+
+                            <!-- Nav Link Onde Estamos -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#OndeEstamos"
                                     >Onde estamos</a
                                 >
                             </li>
+
+                            <!-- Nav Link Fale Conosco -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#FaleConosco"
                                     >Fale Conosco</a
@@ -147,6 +154,7 @@
             </nav>
         </header>
 
+        <!-- Início página -->
         <div class="img-principal">
             <div class="d-lg-grid d-none align-items-center topText">
                 <div class="row justify-content-around">
@@ -180,7 +188,7 @@
                                 class="d-block w-100"
                                 alt="..."
                             />
-                            <div class="carousel-caption d-md-block">
+                            <div class="carousel-caption d-md-block d-none">
                                 <h5>Atendimento Personalizado</h5>
                                 <p>
                                     Aqui, priorizamos seu
@@ -194,7 +202,7 @@
                                 class="d-block w-100"
                                 alt="..."
                             />
-                            <div class="carousel-caption d-md-block">
+                            <div class="carousel-caption d-md-block d-none">
                                 <h5>Clínica Especializada</h5>
                                 <p>Profissionais bem qualificados</p>
                             </div>
@@ -205,7 +213,7 @@
                                 class="d-block w-100"
                                 alt="..."
                             />
-                            <div class="carousel-caption d-md-block">
+                            <div class="carousel-caption d-md-block d-none">
                                 <h5>Qualidade garantida</h5>
                                 <p>Alto padrão de atendimento e qualidade</p>
                             </div>
@@ -214,8 +222,11 @@
                 </div>
             </div>
         </div>
+        <!-- Header sticky -->
         <div id="headerSticky" class="sticky-top"></div>
+        <!-- Redes Sociais -->
         <article
+            id="redes"
             class="bg-body-tertiary redes d-md-flex d-none mw-100 align-items-center justify-content-center"
         >
             <a href="https://instagram.com/newOdontoSp" target="_blank">
@@ -248,17 +259,20 @@
         </article>
 
         <main>
+            <!-- Tratamentos -->
             <article
                 class="bg-body-secondary p-lg-4 py-5 reveal"
                 id="Tratamentos"
             >
                 <br /><br />
+                <!-- Título Tratamentos -->
                 <div class="text-center">
                     <img src="./img/icones/sorriso.png" alt="icone sorriso" />
                     <h2 class="fw-bold fs-1 mx-4 pt-3">Nossos tratamentos</h2>
                 </div>
-
+                <!-- Container dos tratamentos -->
                 <div class="cardContainer pt-3 pb-5">
+                    <!-- Card Estética -->
                     <a href="./tratamentos.html#estetica">
                         <section id="card1">
                             <div class="card rounded rounded-5 text-bg-dark">
@@ -278,6 +292,7 @@
                             </div>
                         </section>
                     </a>
+                    <!-- Card Clínico -->
                     <a href="./tratamentos.html#clinico">
                         <section id="card2">
                             <div class="card rounded rounded-5 text-bg-dark">
@@ -298,6 +313,7 @@
                             </div>
                         </section>
                     </a>
+                    <!-- Card Odontopediatria -->
                     <a href="./tratamentos.html#odontopediatria">
                         <section id="card3">
                             <div class="card rounded rounded-5 text-bg-dark">
@@ -317,6 +333,7 @@
                             </div>
                         </section>
                     </a>
+                    <!-- Card Endodontia -->
                     <a href="./tratamentos.html#endodontia">
                         <section id="card4">
                             <div class="card rounded rounded-5 text-bg-dark">
@@ -337,6 +354,7 @@
                             </div>
                         </section>
                     </a>
+                    <!-- Card Periodontia -->
                     <a href="./tratamentos.html#periodontia">
                         <section id="card5">
                             <div class="card rounded rounded-5 text-bg-dark">
@@ -358,16 +376,21 @@
                     </a>
                 </div>
             </article>
+
+            <!-- Sobre Nós -->
             <article
                 class="py-5 bg-dark text-white reveal text-center"
                 id="conquistas"
             >
+                <!-- Título Sobre nós -->
                 <h2 class="fw-bold fs-1 mx-4 pt-3 mb-5">Sobre nós</h2>
                 <hr class="w-50 d-flex mx-auto mb-5" />
 
+                <!-- Container das infos -->
                 <div
                     class="d-flex flex-wrap row-cols-1 row-cols-md-3 gap-md-0 gap-5 justify-content-evenly text-center align-items-center"
                 >
+                    <!-- Anos Experiência Info-->
                     <div class="col">
                         <h2>5+ anos</h2>
                         <p>de experiência</p>
@@ -376,11 +399,13 @@
                             alt="icone experiência"
                         />
                     </div>
+                    <!-- Unidades Info -->
                     <div class="col">
                         <h2>3 unidades</h2>
                         <p>para te atender</p>
                         <img src="./img/icones/locais.png" alt="icone locais" />
                     </div>
+                    <!-- Pacientes Info -->
                     <div class="col">
                         <h2>1000+</h2>
                         <p>pacientes satisfeitos</p>
@@ -391,7 +416,10 @@
                     </div>
                 </div>
             </article>
+
+            <!-- Depoimentos -->
             <article class="py-5 p-4 reveal" id="Depoimentos">
+                <!-- Título Depoimentos -->
                 <div class="text-center">
                     <img
                         src="./img/icones/depoimentos.png"
@@ -399,11 +427,14 @@
                     />
                     <h2 class="fw-bold fs-1">Depoimento de clientes</h2>
                 </div>
+
+                <!-- Carrossel dos depoimentos -->
                 <div
                     id="carousel-depoimentos"
                     class="carousel slide"
                     data-bs-theme="dark"
                 >
+                    <!-- Indicadores do Carrossel Depoimentos -->
                     <div class="carousel-indicators">
                         <button
                             type="button"
@@ -426,8 +457,11 @@
                             aria-label="Slide 3"
                         ></button>
                     </div>
+                    <!-- Container do Carrossel Depoimentos-->
                     <div class="carousel-inner">
+                        <!-- Depoimento 1 -->
                         <div class="carousel-item mt-lg-0 mt-5 active">
+                            <!-- Texto depoimento 1 -->
                             <div class="carousel-caption">
                                 <p class="fs-5">
                                     Realizei meu tratamento na Newodonto e tive
@@ -439,7 +473,9 @@
                                 </h5>
                             </div>
                         </div>
+                        <!-- Depoimento 2 -->
                         <div class="carousel-item mt-lg-0 mt-5">
+                            <!-- Texto depoimento 2 -->
                             <div class="carousel-caption">
                                 <p class="fs-5">
                                     Muito obrigada Dr. Marcelo e toda sua
@@ -452,7 +488,9 @@
                                 </h5>
                             </div>
                         </div>
+                        <!-- Depoimento 3 -->
                         <div class="carousel-item mt-lg-0 mt-5">
+                            <!-- Texto Depoimento 3 -->
                             <div class="carousel-caption">
                                 <p class="fs-5">
                                     Recomendo a todos a clínica Newodonto,
@@ -467,6 +505,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Botão Voltar Carrossel Depoimentos -->
                     <button
                         class="carousel-control-prev"
                         type="button"
@@ -479,6 +518,7 @@
                         ></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
+                    <!-- Botão Avançar Carrossel Depoimentos -->
                     <button
                         class="carousel-control-next"
                         type="button"
@@ -494,16 +534,20 @@
                 </div>
             </article>
 
+            <!-- Equipe -->
             <article class="py-5 p-4 reveal bg-body-tertiary" id="Equipe">
+                <!-- Título Equipe -->
                 <div class="text-center">
                     <img src="./img/icones/equipe.png" alt="icone equipe.png" />
                     <h2 class="fw-bold fs-1">Nossa equipe</h2>
                 </div>
+                <!-- Carrossel Equipe -->
                 <div
                     id="carousel-equipe"
                     class="carousel slide"
                     data-bs-theme="dark"
                 >
+                    <!-- Indicadores Carrossel Equipe -->
                     <div class="carousel-indicators">
                         <button
                             type="button"
@@ -526,41 +570,76 @@
                             aria-label="Slide 3"
                         ></button>
                     </div>
+                    <!-- Container Carrossel Equipe -->
                     <div class="carousel-inner">
+                        <!-- Carrossel Equipe Item 1 -->
                         <div class="carousel-item active mt-lg-0 mt-5">
-                            <div class="carousel-caption d-flex justify-content-center align-items-center">
-                                <img src="./img/newOdonto.png" alt="" class="rounded-circle border-2 border border-info p-3" width="300">
+                            <div
+                                class="carousel-caption d-md-flex justify-content-center align-items-center"
+                            >
+                                <!-- Foto Doutor 1 -->
+                                <img
+                                    src="./img/newOdonto.png"
+                                    alt=""
+                                    class="rounded-circle border-2 border border-info p-3"
+                                    width="75%"
+                                    style="max-width: 300px"
+                                />
+                                <!-- Sobre Doutor 1 -->
                                 <div class="d-flex flex-column mx-5">
-                                    <h3 class="m-0">Nome do Doutor</h3>
+                                    <h3 class="m-0">Marcelo Darphini</h3>
                                     <h5 class="text-secondary-emphasis my-4">
-                                        Especialidade
+                                        Cirurgião
                                     </h5>
                                 </div>
                             </div>
                         </div>
+                        <!-- Carrossel Equipe Item 2 -->
                         <div class="carousel-item mt-lg-0 mt-5">
-                            <div class="carousel-caption d-flex justify-content-center align-items-center">
-                                <img src="./img/newOdonto.png" alt="" class="rounded-circle border-2 border border-info p-3" width="300">
+                            <div
+                                class="carousel-caption d-md-flex justify-content-center align-items-center"
+                            >
+                                <!-- Foto Doutor 2 -->
+                                <img
+                                    src="./img/newOdonto.png"
+                                    alt=""
+                                    class="rounded-circle border-2 border border-info p-3"
+                                    width="75%"
+                                    style="max-width: 300px"
+                                />
+                                <!-- Sobre Doutor 2 -->
                                 <div class="d-flex flex-column mx-5">
-                                    <h3 class="m-0">Nome do Doutor</h3>
-                                    <h5 class="text-secondary-emphasis my-4">
-                                        Especialidade
-                                    </h5>
+                                    <h3 class="m-0">Marina Reuer</h3>
+                                    <h5
+                                        class="text-secondary-emphasis my-4"
+                                    >Esteticista</h5>
                                 </div>
                             </div>
                         </div>
+                        <!-- Carrossel Equipe Item 3 -->
                         <div class="carousel-item mt-lg-0 mt-5">
-                            <div class="carousel-caption d-flex justify-content-center align-items-center">
-                                <img src="./img/newOdonto.png" alt="" class="rounded-circle border-2 border border-info p-3" width="300">
+                            <div
+                                class="carousel-caption d-md-flex justify-content-center align-items-center"
+                            >
+                                <!-- Foto Doutor 3 -->
+                                <img
+                                    src="./img/newOdonto.png"
+                                    alt=""
+                                    class="rounded-circle border-2 border border-info p-3"
+                                    width="75%"
+                                    style="max-width: 300px"
+                                />
+                                <!-- Sobre Doutor 3 -->
                                 <div class="d-flex flex-column mx-5">
-                                    <h3 class="m-0">Nome do Doutor</h3>
+                                    <h3 class="m-0">Jonathan Felix</h3>
                                     <h5 class="text-secondary-emphasis my-4">
-                                        Especialidade
+                                        Odontopediatra
                                     </h5>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Botão Voltar Carrossel Equipe -->
                     <button
                         class="carousel-control-prev"
                         type="button"
@@ -573,6 +652,7 @@
                         ></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
+                    <!-- Botão Avançar Carrossel Equipe -->
                     <button
                         class="carousel-control-next"
                         type="button"
@@ -588,7 +668,9 @@
                 </div>
             </article>
 
+            <!-- Instagram -->
             <article class="mt-5 px-2 reveal" id="Instagram">
+                <!-- Título Instagram -->
                 <div class="text-center">
                     <img
                         src="./img/icones/instagram.png"
@@ -598,6 +680,7 @@
                     <h2 class="fw-bold fs-1 mb-5">NewOdonto no Instagram</h2>
                 </div>
 
+                <!-- Posts Intagram - Por ElfSight -->
                 <script
                     src="https://static.elfsight.com/platform/platform.js"
                     data-use-service-core
@@ -611,27 +694,33 @@
                 ></div>
             </article>
 
+            <!-- Onde Estamos -->
             <article class="mb-5 p-4 reveal" id="OndeEstamos">
                 <br /><br />
+                <!-- Título Nossas Unidades -->
                 <div class="text-center">
                     <img src="./img/icones/locais.png" alt="icone locais" />
                     <h2 class="fw-bold fs-1">Nossas Unidades</h2>
                 </div>
+                <!-- Container Links Unidades -->
                 <div
                     class="d-lg-flex d-none flex-nowrap justify-content-evenly mt-5"
                 >
                     <div class="col-lg-2 my-5">
                         <div id="lista-tratamentos" class="list-group">
+                            <!-- List Item Santana -->
                             <a
                                 class="list-group-item list-group-item-action"
                                 href="#unidade1"
                                 >Santana</a
                             >
+                            <!-- List Item Itaquera -->
                             <a
                                 class="list-group-item list-group-item-action"
                                 href="#unidade2"
                                 >Itaquera</a
                             >
+                            <!-- List Item Santo Amaro -->
                             <a
                                 class="list-group-item list-group-item-action"
                                 href="#unidade3"
@@ -639,6 +728,7 @@
                             >
                         </div>
                     </div>
+                    <!-- Container de cards Unidades -->
                     <div class="col-lg-8">
                         <div
                             data-bs-spy="scroll"
@@ -648,11 +738,13 @@
                             tabindex="0"
                             style="height: 400px !important"
                         >
+                            <!-- Card Unidade Santana -->
                             <section id="unidade1" class="mt-3 d-flex gap-5">
                                 <div class="unidade">
                                     <h2 class="text-center mb-5">
                                         Unidade Santana
                                     </h2>
+                                    <!-- Endereço Santana -->
                                     <p>
                                         <img
                                             width="24"
@@ -662,6 +754,7 @@
                                         />
                                         Av. Gen. Ataliba Leonel, 245
                                     </p>
+                                    <!-- Telefone Santana -->
                                     <p>
                                         <img
                                             width="24"
@@ -671,6 +764,7 @@
                                         />
                                         (11) 2949-1110
                                     </p>
+                                    <!-- Email Santana -->
                                     <p>
                                         <img
                                             width="24"
@@ -681,6 +775,7 @@
                                         santana@newodonto.com.br
                                     </p>
                                 </div>
+                                <!-- Mapa Santana -->
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3658.713407725206!2d-46.6257041!3d-23.5068301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef6283c6753e7%3A0xc96724dd19a6d04b!2sInstituto%20da%20Oportunidade%20Social!5e0!3m2!1spt-BR!2sbr!4v1687463996471!5m2!1spt-BR!2sbr"
                                     width="400"
@@ -691,11 +786,13 @@
                                     referrerpolicy="no-referrer-when-downgrade"
                                 ></iframe>
                             </section>
+                            <!-- Card Unidade Itaquera -->
                             <section id="unidade2" class="mt-3 d-flex gap-5">
                                 <div class="unidade">
                                     <h2 class="text-center mb-5">
                                         Unidade Itaquera
                                     </h2>
+                                    <!-- Endereço Itaquera -->
                                     <p>
                                         <img
                                             width="24"
@@ -705,6 +802,7 @@
                                         />
                                         R. Álvaro de Mendonça, 456
                                     </p>
+                                    <!-- Telefone Itaquera -->
                                     <p>
                                         <img
                                             width="24"
@@ -714,6 +812,7 @@
                                         />
                                         (11) 3750-1996
                                     </p>
+                                    <!-- Email Itaquera -->
                                     <p>
                                         <img
                                             width="24"
@@ -724,6 +823,7 @@
                                         itaquera@newodonto.com.br
                                     </p>
                                 </div>
+                                <!-- Mapa Itaquera -->
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.912428886926!2d-46.449927624795706!3d-23.5356518788175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66a3622baa7d%3A0x1843cfc1dbe78f23!2sR.%20%C3%81lvaro%20de%20Mendon%C3%A7a%2C%20456%20-%20Itaquera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008215-290!5e0!3m2!1spt-BR!2sbr!4v1687478423272!5m2!1spt-BR!2sbr"
                                     width="400"
@@ -734,11 +834,13 @@
                                     referrerpolicy="no-referrer-when-downgrade"
                                 ></iframe>
                             </section>
+                            <!-- Card Unidade Santo Amaro -->
                             <section id="unidade3" class="mt-3 d-flex gap-5">
                                 <div class="unidade">
                                     <h2 class="text-center mb-5">
                                         Unidade Santo Amaro
                                     </h2>
+                                    <!-- Endereço Santo Amaro -->
                                     <p>
                                         <img
                                             width="24"
@@ -748,6 +850,7 @@
                                         />
                                         R. Cel. Luís Barroso, 455
                                     </p>
+                                    <!-- Telefone Santo Amaro -->
                                     <p>
                                         <img
                                             width="24"
@@ -757,6 +860,7 @@
                                         />
                                         (11) 2980-8465
                                     </p>
+                                    <!-- Email Santo Amaro -->
                                     <p>
                                         <img
                                             width="24"
@@ -767,6 +871,7 @@
                                         santoAmaro@newodonto.com.br
                                     </p>
                                 </div>
+                                <!-- Mapa Santo Amaro -->
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.825462578867!2d-46.70731602479234!3d-23.646420878741495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50fed7d25be5%3A0x957743a04f0ef5e1!2sR.%20Cel.%20Lu%C3%ADs%20Barroso%2C%20455%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004750-030!5e0!3m2!1spt-BR!2sbr!4v1687478481277!5m2!1spt-BR!2sbr"
                                     width="400"
@@ -782,16 +887,21 @@
                 </div>
             </article>
 
+            <!-- Fale Conosco -->
             <article class="mt-5 p-4 bg-body-secondary reveal" id="FaleConosco">
                 <br /><br />
+                <!-- Título - Fale Conosco -->
                 <div class="text-center">
                     <img src="./img/icones/contato.png" alt="icone contato" />
                     <h2 class="fw-bold fs-1 mb-5">
                         Entre em contato com a gente!
                     </h2>
                 </div>
+                <!-- Form de Contato -->
                 <form class="px-lg-5 needs-validation">
+                    <!-- Flex para nome e sobrenome ficarem na mesma linha -->
                     <div class="d-lg-flex gap-lg-3">
+                        <!-- Input Nome -->
                         <div class="form-floating mb-3 col">
                             <input
                                 type="text"
@@ -802,6 +912,7 @@
                             />
                             <label class="required" for="nome">Nome</label>
                         </div>
+                        <!-- Input Sobrenome -->
                         <div class="form-floating mb-3 col">
                             <input
                                 type="text"
@@ -815,6 +926,7 @@
                             >
                         </div>
                     </div>
+                    <!-- Input Email -->
                     <div class="d-lg-flex gap-lg-3">
                         <div class="form-floating mb-3 col-lg-8">
                             <input
@@ -827,6 +939,7 @@
                             />
                             <label class="required" for="email">Email</label>
                         </div>
+                        <!-- Input Celular -->
                         <div class="form-floating mb-3 col">
                             <input
                                 type="number"
@@ -840,6 +953,7 @@
                             >
                         </div>
                     </div>
+                    <!-- Select de Especialidade -->
                     <div class="form-floating mb-3">
                         <select
                             class="form-select"
@@ -862,6 +976,7 @@
                             >Tratamento<span style="color: red"> *</span></label
                         >
                     </div>
+                    <!-- Select de Unidade -->
                     <div class="form-floating mb-3">
                         <select
                             class="form-select"
@@ -880,6 +995,7 @@
                             >Unidade<span style="color: red"> *</span></label
                         >
                     </div>
+                    <!-- Comentários -->
                     <div class="form-floating mb-3">
                         <textarea
                             class="form-control"
@@ -889,6 +1005,7 @@
                         ></textarea>
                         <label for="floatingTextarea2">Comentários</label>
                     </div>
+                    <!-- Botão de Enviar -->
                     <div class="d-grid p-3">
                         <button
                             type="submit"
@@ -904,10 +1021,12 @@
             </article>
         </main>
 
+        <!-- Footer -->
         <footer class="bg-dark-subtle">
             <section
                 class="footer-top d-flex gap-5 flex-wrap justify-content-center align-items-center"
             >
+                <!-- Logo -->
                 <a class="navbar-brand" href="#"
                     ><img
                         src="./img/newOdonto.png"
@@ -916,6 +1035,7 @@
                         class=""
                     />NEWODONTO</a
                 >
+                <!-- Instagram -->
                 <a
                     href="https://instagram.com/newOdontoSp"
                     target="_blank"
@@ -927,6 +1047,7 @@
                         alt="instagram"
                     />
                 </a>
+                <!-- WhatsApp -->
                 <a
                     href="https://api.whatsapp.com/send/?phone=5511993602212"
                     target="_blank"
@@ -938,6 +1059,7 @@
                         alt="whatsapp"
                     />
                 </a>
+                <!-- Telefone -->
                 <a href="tel:993602212" class="mb-5 mb-lg-0">
                     <img
                         class="img-footer"
@@ -946,8 +1068,11 @@
                     />
                 </a>
             </section>
+
+            <!-- Copyright -->
             <section class="copyright">
                 <h6>© Website por <b>NOLS - 2023</b></h6>
+                <!-- Informe Fictício -->
                 <p class="d-flex align-items-center justify-content-center">
                     <span class="text-info material-symbols-outlined mx-2">
                         info </span
@@ -956,6 +1081,7 @@
             </section>
         </footer>
 
+        <!-- Botão do Chat -->
         <a
             id="chat"
             class="btn rounded rounded-circle bg-warning d-flex align-content-end justify-content-center"
@@ -963,6 +1089,7 @@
             target="_blank"
             ><img src="./img/chat.png" id="img-chat" class="" alt=""
         /></a>
+        <!-- Botão ToTop -->
         <a
             class="btn btn-outline-secondary rounded-4 border-2 visually-hidden"
             id="toTop"
@@ -970,33 +1097,7 @@
             role="button"
             ><img id="img1" src="./img/to-top.png" alt="Imagem Scroll Up"
         /></a>
-        <script>
-            let mybutton = document.getElementById('toTop');
-            window.onscroll = function () {
-                scrollFunction();
-            };
-            function scrollFunction() {
-                if (
-                    document.body.scrollTop > 150 ||
-                    document.documentElement.scrollTop > 150
-                ) {
-                    document
-                        .getElementById('toTop')
-                        .classList.remove('visually-hidden');
-                } else {
-                    document
-                        .getElementById('toTop')
-                        .classList.add('visually-hidden');
-                }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-        </script>
-
+        <!-- Script Bootstrap -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

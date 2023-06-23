@@ -268,7 +268,6 @@ strong {
 .topText {
     display: none;
     position: absolute;
-    padding: 5rem;
     top: 0;
     left: 0;
     height: 100%;
@@ -321,7 +320,7 @@ strong {
     cursor: grabbing !important;
 }
 
-/* .reveal {
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -331,7 +330,7 @@ strong {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
-} */
+}
 
 .btn-info {
     border: none !important;
@@ -442,11 +441,9 @@ select {
     border: none !important;
 }
 
-.img-principal .carousel-caption {
-    margin-bottom: 7rem;
-}
-
 .img-principal .carousel-caption h5 {
+    padding: 0.75rem;
+    box-shadow: 0 2px 0 0 #4fcee5 ;
     color: #00d9ff !important;
     font-weight: 600;
     font-size: 2rem;
@@ -471,7 +468,13 @@ select {
     margin-top: 1rem;
 }
 
+.img-principal .carousel img {
+    height: 95vh !important;
+    object-fit: cover !important;
+}
+
 .tratamentos section {
+    padding-top: 5rem;
     height: 100% !important;
 }
 
@@ -525,4 +528,8 @@ select {
 }
 .btn.btn-outline-info:active {
     background-color: #1fa4bc !important;
+}
+
+.eapps-instagram-feed-popup-inner {
+    padding-bottom: none !important;
 }
