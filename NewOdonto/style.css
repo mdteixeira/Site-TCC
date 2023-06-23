@@ -49,7 +49,7 @@ a.nav-link:hover,
     color: white !important;
 }
 
-.redes p{
+.redes p {
     margin: 0;
     font-size: 1.2rem;
 }
@@ -192,6 +192,8 @@ input::-webkit-inner-spin-button {
 }
 
 .img-footer {
+    width: 2.5rem;
+    filter: invert(50%) sepia(100%);
     filter: none;
 }
 
@@ -509,7 +511,7 @@ select {
     background-color: #00d9ff !important;
 }
 
-.btn.btn-outline-info:hover img{
+.btn.btn-outline-info:hover img {
     filter: grayscale(1) brightness(2) !important;
 }
 
