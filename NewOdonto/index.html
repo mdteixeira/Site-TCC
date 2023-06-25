@@ -49,7 +49,7 @@
         <!-- Header -->
         <header>
             <!-- Nav -->
-            <nav class="navbar navbar-expand-lg fixed-top mx-4">
+            <nav class="navbar navbar-expand-lg fixed-top px-4">
                 <div class="container-fluid">
                     <!-- Logo Navbar -->
                     <a class="navbar-brand" href="#"
@@ -163,13 +163,16 @@
                             id="logoPrincipal"
                             src="./img/newOdonto.png"
                             alt=""
-                            class="img-fluid w-50"
+                            class="img-fluid w-100"
+                            style="max-width: 250px"
                         />
-                        <h2 class="w-50 text-center text-white fw-bolder">
+                        <h2
+                            class="text-center d-none d-md-block text-white fw-bolder"
+                        >
                             NewOdonto
                         </h2>
                     </div>
-                    <h2 id="sorrirTexto" class="h-25 w-25">
+                    <h2 id="sorrirTexto" class="h-25 w-25 d-none d-lg-block">
                         Porque sorrir
                         <strong><br />faz bem</strong>
                     </h2>
@@ -188,7 +191,7 @@
                                 class="d-block w-100"
                                 alt="..."
                             />
-                            <div class="carousel-caption d-md-block d-none">
+                            <div class="carousel-caption d-md-block">
                                 <h5>Atendimento Personalizado</h5>
                                 <p>
                                     Aqui, priorizamos seu
@@ -202,7 +205,7 @@
                                 class="d-block w-100"
                                 alt="..."
                             />
-                            <div class="carousel-caption d-md-block d-none">
+                            <div class="carousel-caption d-md-block">
                                 <h5>Clínica Especializada</h5>
                                 <p>Profissionais bem qualificados</p>
                             </div>
@@ -213,7 +216,7 @@
                                 class="d-block w-100"
                                 alt="..."
                             />
-                            <div class="carousel-caption d-md-block d-none">
+                            <div class="carousel-caption d-md-block">
                                 <h5>Qualidade garantida</h5>
                                 <p>Alto padrão de atendimento e qualidade</p>
                             </div>
@@ -261,22 +264,28 @@
 
         <main>
             <!-- Info Hero -->
-            <article
-                class="bg-body-secondary p-lg-4 py-5 reveal"
-                id="Tratamentos"
-            >
+            <article class="bg-body-secondary p-lg-4 py-5 reveal" id="Hero">
                 <br /><br />
-                <!-- Título Tratamentos -->
+                <!-- Título Hero -->
                 <div class="text-center">
-                    <img src="./img/newOdonto.png" alt="logo" width="200" style="margin-left: 1rem;" />
+                    <img
+                        src="./img/newOdonto.png"
+                        alt="logo"
+                        width="200"
+                        style="margin-left: 1rem"
+                    />
                     <h2 class="fw-bold fs-1 mx-4 pt-3">NewOdonto</h2>
 
                     <p class="text-center lead mb-5">
                         Clínica Odontológica na Zona Norte de São Paulo
                     </p>
 
-                    <div class="d-flex justify-content-center gap-3 mb-5">
-                        <a href="./#FaleConosco" class="btn fs-4 btn-outline-info"
+                    <div
+                        class="d-flex justify-content-center flex-wrap gap-3 mb-5"
+                    >
+                        <a
+                            href="./#FaleConosco"
+                            class="btn fs-4 btn-outline-info"
                             >Entre em contato</a
                         >
                         <a href="./tratamentos.html" class="btn fs-4 btn-dark"
@@ -695,32 +704,6 @@
                 </div>
             </article>
 
-            <!-- Instagram -->
-            <article class="mt-5 px-2 reveal" id="Instagram">
-                <!-- Título Instagram -->
-                <div class="text-center">
-                    <img
-                        src="./img/icones/instagram.png"
-                        alt="icone instagram"
-                        class="border-0"
-                    />
-                    <h2 class="fw-bold fs-1 mb-5">NewOdonto no Instagram</h2>
-                </div>
-
-                <!-- Posts Intagram - Por ElfSight -->
-                <script
-                    src="https://static.elfsight.com/platform/platform.js"
-                    data-use-service-core
-                    defer
-                ></script>
-                <div
-                    class="elfsight-app-d3bfc2cc-4557-46e3-aa02-ce1c490f76d1"
-                ></div>
-                <div
-                    class="elfsight-app-b209af23-2f22-457d-9863-6832d07d4ab8"
-                ></div>
-            </article>
-
             <!-- Onde Estamos -->
             <article class="mb-5 p-4 reveal" id="OndeEstamos">
                 <br /><br />
@@ -730,9 +713,7 @@
                     <h2 class="fw-bold fs-1">Nossas Unidades</h2>
                 </div>
                 <!-- Container Links Unidades -->
-                <div
-                    class="d-lg-flex d-none flex-nowrap justify-content-evenly mt-5"
-                >
+                <div class="d-lg-flex flex justify-content-evenly mt-5">
                     <div class="col-lg-2 my-5">
                         <div id="lista-tratamentos" class="list-group">
                             <!-- List Item Santana -->
@@ -804,6 +785,7 @@
                                 </div>
                                 <!-- Mapa Santana -->
                                 <iframe
+                                    class="d-none d-md-block"
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3658.713407725206!2d-46.6257041!3d-23.5068301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef6283c6753e7%3A0xc96724dd19a6d04b!2sInstituto%20da%20Oportunidade%20Social!5e0!3m2!1spt-BR!2sbr!4v1687463996471!5m2!1spt-BR!2sbr"
                                     width="400"
                                     height="400"
@@ -852,6 +834,7 @@
                                 </div>
                                 <!-- Mapa Itaquera -->
                                 <iframe
+                                    class="d-none d-md-block"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.912428886926!2d-46.449927624795706!3d-23.5356518788175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66a3622baa7d%3A0x1843cfc1dbe78f23!2sR.%20%C3%81lvaro%20de%20Mendon%C3%A7a%2C%20456%20-%20Itaquera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008215-290!5e0!3m2!1spt-BR!2sbr!4v1687478423272!5m2!1spt-BR!2sbr"
                                     width="400"
                                     height="400"
@@ -900,6 +883,7 @@
                                 </div>
                                 <!-- Mapa Santo Amaro -->
                                 <iframe
+                                    class="d-none d-md-block"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.825462578867!2d-46.70731602479234!3d-23.646420878741495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50fed7d25be5%3A0x957743a04f0ef5e1!2sR.%20Cel.%20Lu%C3%ADs%20Barroso%2C%20455%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004750-030!5e0!3m2!1spt-BR!2sbr!4v1687478481277!5m2!1spt-BR!2sbr"
                                     width="400"
                                     height="400"
@@ -912,6 +896,32 @@
                         </div>
                     </div>
                 </div>
+            </article>
+
+            <!-- Instagram -->
+            <article class="mt-5 px-2 reveal" id="Instagram">
+                <!-- Título Instagram -->
+                <div class="text-center">
+                    <img
+                        src="./img/icones/instagram.png"
+                        alt="icone instagram"
+                        class="border-0"
+                    />
+                    <h2 class="fw-bold fs-1 mb-5">NewOdonto no Instagram</h2>
+                </div>
+
+                <!-- Posts Intagram - Por ElfSight -->
+                <script
+                    src="https://static.elfsight.com/platform/platform.js"
+                    data-use-service-core
+                    defer
+                ></script>
+                <div
+                    class="elfsight-app-d3bfc2cc-4557-46e3-aa02-ce1c490f76d1"
+                ></div>
+                <div
+                    class="elfsight-app-b209af23-2f22-457d-9863-6832d07d4ab8"
+                ></div>
             </article>
 
             <!-- Fale Conosco -->
@@ -1063,37 +1073,39 @@
                     />NewOdonto</a
                 >
                 <!-- Instagram -->
-                <a
-                    href="https://instagram.com/newOdontoSp"
-                    target="_blank"
-                    class="mb-5 mt-lg-0 mb-lg-0"
-                >
-                    <img
-                        class="img-footer"
-                        src="./img/redes/insta.png"
-                        alt="instagram"
-                    />
-                </a>
-                <!-- WhatsApp -->
-                <a
-                    href="https://api.whatsapp.com/send/?phone=5511993602212"
-                    target="_blank"
-                    class="mb-5 mb-lg-0"
-                >
-                    <img
-                        class="img-footer"
-                        src="./img/redes/whatsapp.png"
-                        alt="whatsapp"
-                    />
-                </a>
-                <!-- Telefone -->
-                <a href="tel:993602212" class="mb-5 mb-lg-0">
-                    <img
-                        class="img-footer"
-                        src="./img/redes/telefone.png"
-                        alt="telefone"
-                    />
-                </a>
+                <div class="d-flex flex-nowrap gap-5">
+                    <a
+                        href="https://instagram.com/newOdontoSp"
+                        target="_blank"
+                        class="mb-5 mt-lg-0 mb-lg-0"
+                    >
+                        <img
+                            class="img-footer"
+                            src="./img/redes/insta.png"
+                            alt="instagram"
+                        />
+                    </a>
+                    <!-- WhatsApp -->
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5511993602212"
+                        target="_blank"
+                        class="mb-5 mb-lg-0"
+                    >
+                        <img
+                            class="img-footer"
+                            src="./img/redes/whatsapp.png"
+                            alt="whatsapp"
+                        />
+                    </a>
+                    <!-- Telefone -->
+                    <a href="tel:993602212" class="mb-5 mb-lg-0">
+                        <img
+                            class="img-footer"
+                            src="./img/redes/telefone.png"
+                            alt="telefone"
+                        />
+                    </a>
+                </div>
             </section>
 
             <!-- Copyright -->
