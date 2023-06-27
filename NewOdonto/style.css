@@ -486,6 +486,8 @@ select {
 }
 
 .list-group-item {
+    text-align: center !important;
+    font-size: 80%;
     font-weight: bold;
     box-shadow: 0 0.1rem 0.6rem #eee;
     border: none !important;
@@ -533,3 +535,9 @@ select {
 .eapps-instagram-feed-popup-inner {
     padding-bottom: none !important;
 }
+
+.nav-pills .nav-link.active {
+    background-color: #00d9ff !important;
+    color: white !important;
+}
+
