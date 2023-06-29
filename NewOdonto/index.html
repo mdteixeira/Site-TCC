@@ -39,9 +39,6 @@
         </style>
         <!-- Fim Google -->
 
-        <!-- Link Script Página -->
-        <script src="script.js"></script>
-
         <title>NewOdonto</title>
     </head>
 
@@ -1045,8 +1042,11 @@
                     <!-- Botão de Enviar -->
                     <div class="d-grid p-3">
                         <button
-                            type="submit"
+                            type="button"
                             class="btn btn-info text-white btn-lg d-flex align-items-center justify-content-center py-3"
+                            data-bs-toggle="modal"
+                            data-bs-target="#confirm"
+                            
                         >
                             Enviar
                             <span class="material-symbols-outlined">
@@ -1057,6 +1057,37 @@
                 </form>
             </article>
         </main>
+
+        <!-- Modal -->
+        <!-- <div
+            class="modal fade"
+            id="confirm"
+            tabindex="-1"
+            aria-labelledby="confirmLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered text-center">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="confirmLabel">
+                            Seu contato foi enviado!
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">Agradecemos pela confiança! <br><br> Retornaremos muito em breve.</div>
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-info text-white">
+                            Confirmar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
         <!-- Footer -->
         <footer class="bg-dark-subtle">
@@ -1142,5 +1173,8 @@
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"
         ></script>
+
+        <!-- Link Script Página -->
+        <script src="script.js"></script>
     </body>
 </html>
