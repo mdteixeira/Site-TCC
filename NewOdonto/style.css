@@ -16,7 +16,6 @@ a.nav-link:hover,
 }
 
 .redes {
-    z-index: 99;
     padding: 1rem;
     height: auto;
 }
@@ -68,13 +67,14 @@ a.nav-link:hover,
 }
 
 #headerSticky {
+    z-index: 4;
     height: 4rem;
     width: 100%;
     background-color: #1fa4bc;
 }
 
 #chat {
-    z-index: 10000000 !important;
+    z-index: 5 !important;
     position: fixed;
     top: 50%;
     right: 30px;
