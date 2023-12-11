@@ -418,7 +418,12 @@ select {
 }
 
 #Depoimentos .carousel-item {
-    height: 20rem;
+    height: 18rem;
+}
+
+#Depoimentos .active {
+    display: flex !important;
+    
 }
 
 #Equipe .carousel-item {
